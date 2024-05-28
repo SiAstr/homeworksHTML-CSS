@@ -1,0 +1,86 @@
+{
+  "plants": [
+    {
+      "nome": "Deliciosa Variegata",
+      "family": "Monstera ",
+      "img": "./assets/plants-photo/DeliciosaVariegata.avif",
+      "prezzo": "44.95",
+      "shortDescr": "The Monstera ''Borsigiana'' Deliciosa Variegated is a real show stopper! Her leaves are big, beautiful and heart-shaped, just like a regular Monstera Deliciosa. The thing that makes her special is the deviating colour on her leaves.",
+      "id": "1",
+      "amountPurchased": "0"
+    },
+    {
+      "nome": "Jacklyn",
+      "family": "Alocasia",
+      "img": "./assets/plants-photo/Jacklyn.avif",
+      "prezzo": "37.95",
+      "shortDescr": "Look at her astonishing leaf shape! The Alocasia Jacklyn is really one of a kind. Besides her leaf shape being breathtaking, she also has an incredible veining on them. This plant is picture perfect from head to toe! ",
+      "id": "2",
+      "amountPurchased": "0"
+    },
+    {
+      "nome": "Black Zebrina",
+      "family": "Alocasia",
+      "img": "./assets/plants-photo/BlackZebrina.avif",
+      "prezzo": "34.95",
+      "shortDescr": "The Alocasia Black Zebrina originates from the tropical areas in Asia and Eastern-Australia and like many other plant species is part of the Araceae family. ",
+      "id": "3",
+      "amountPurchased": "0"
+    },
+    {
+      "nome": "Mayoi",
+      "family": "Philodendron ",
+      "img": "./assets/plants-photo/Mayoi.avif",
+      "prezzo": "36.95",
+      "shortDescr": "This Philodendron has a very distinct leaf shape. This makes her absolutely unique. The leaves look a bit like those of a Monstera plant, but much more incised! This is the Philodendron Mayoi and she is therefore very popular among Philodendron lovers. ",
+      "id": "4",
+      "amountPurchased": "0"
+    },
+    {
+      "nome": "Villenaorum",
+      "family": "Anthurium ",
+      "img": "./assets/plants-photo/Villenaorum.avif",
+      "prezzo": "42.95",
+      "shortDescr": "This rare gem is a true statement piece! Its velvety leaves can become quite big and are embellished with bright veins. As the plant matures the foliage becomes darker and richer in colour, which is just gorgeous to witness. ",
+      "id": "5",
+      "amountPurchased": "0"
+    },
+    {
+      "nome": "Serpens",
+      "family": "Philodendron ",
+      "img": "./assets/plants-photo/Serpens.avif",
+      "prezzo": "69.95",
+      "shortDescr": "Fuzzy petioles and long heart shaped leaves, this stunner is the Philodendron Serpens. Together with her ribbed texture on her foliage, this plant is a real charmer. Is this stylish plant the next addition to your collection?",
+      "id": "6",
+      "amountPurchased": "0"
+    },
+    {
+      "nome": "Wallichii",
+      "family": "Schismatoglottis ",
+      "img": "./assets/plants-photo/Wallichii.avif",
+      "prezzo": "19.95",
+      "shortDescr": "Schismatoglottis Wallichii is an elegant plant and also rare. She stands out for her beautiful leaf markings. Her leaves have a pointed shape and are decorated with a pale green, almost silvery stripe on either side of the plant's vein.",
+      "id": "7",
+      "amountPurchased": "0"
+    },
+    {
+      "nome": "Platinum",
+      "family": "Alocasia ",
+      "img": "./assets/plants-photo/Platinum.avif",
+      "prezzo": "49.95",
+      "shortDescr": "This Alocasia Platinum is such a beauty! She really stand outs because of her spectacular foliage. Her leaves are arrow shaped and shine because they have a kind of glossy layer on them.",
+      "id": "8",
+      "amountPurchased": "0"
+    },
+    {
+      "nome": "Orbifolia",
+      "family": "Calathea  ",
+      "img": "./assets/plants-photo/Orbifolia.avif",
+      "prezzo": "29.45",
+      "shortDescr": "The Calathea Orbifolia is an impressive lady. She overrules the other Calatheas when it comes to the width of leaves. These oversized green leaves are decorated with pretty silvery strokes. Just like many Calatheas the Orbifolia is also known as ‘The Living Plant’.",
+      "id": "9",
+      "amountPurchased": "0"
+    }
+  ],
+  "purchases": []
+}

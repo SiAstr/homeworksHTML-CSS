@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Forest</title>
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./css/cart-style.css">
+    </head>
+    <body>
+        <header id="header">
+            <!-- header -->
+            <div class="container">
+                <div class="header-box">
+                    <div class="company-name"><a href="./index.html">HOME FOREST</a></div>
+                    <div class="logo">
+                        <img src="./assets/home_forest_v03.svg" alt="">
+                    </div>
+                    <div class="header-nav-icon">
+                        <div class="cart-icon" id="cartDesk">
+                            <i class="bi bi-cart cart-nav-mobile" id="myCart"></i>
+                            <div class="circle-tag">
+                                <span class="content-counter"></span></div>
+                        </div>
+                        <div class="burger-icon">
+                            <i class="bi bi-list" id="openMenu"></i>
+                        </div>
+                    </div>
+                    <!-- Nav desktop -->
+                    <div class="desktop-nav">
+                        <ul class="main-nav">
+                            <li class="nav-link">
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="./about.html">About</a>
+                            </li>
+                            <li class="nav-link cart-nav-desktop" id="cartDesk">
+                                <a class="active" href="#">Cart</a>
+                                <div class="circle-tag">
+                                    <span class="content-counter"></span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Nav mobile -->
+                    <div class="mobile-nav">
+                        <div class="mobile-nav-box">
+                            <i class="bi bi-x-lg" id="closeMenu"></i>
+                            <ul class="main-nav">
+                                <li class="nav-link">
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="./about.html">About</a>
+                                </li>
+                                <li class="nav-link cart-nav-side" id="cartDesk">
+                                    <a class="active" href="#">Cart</a>
+                                    <div class="circle-tag">
+                                        <span class="content-counter"></span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="main-cart">
+                <div class="container recap-box">
+                    <div class="summary-area">
+                        <div class="cart-titles">
+                            <h1 class="main-title">Your green Cart</h1>
+                            <p class="undertitle">Modify the quantity of products as you like then finalize your shopping</p>
+                        </div>
+                        <div class="items-list">
+                            <!-- generazione card dinamiche -->
+                        </div>
+                    </div>
+                    <div class="final-payment">
+                        <div class="final-titles">
+                            <h2 class="final-title">Your information</h2>
+                        </div>
+                        <div class="final-recap">
+                            <p class="quantity-tag">Items: <span class="number-tag"></span></p>
+                            <p class="total-to-pay">Total: €<span class="total-price"></span></p>
+                        </div>
+                        <div class="final-form">
+                            <div id="form">
+                                <p class="final-undertitle">Please insert your shipping data</p>
+                                <input type="text" id="name" name="name" placeholder="Name">
+                                <input type="text" id="surname" name="surname" placeholder="Surname">
+                                <input type="text" id="address" name="address" placeholder="Address">
+                                <input type="text" id="postalCode" name="postalCode" placeholder="Postal Code">
+                                <input type="text" id="city" name="city" placeholder="City">
+                                <input type="email" id="email" name="email" placeholder="Email">
+                                <p class="final-undertitle">Please insert your payment data</p>
+                                <input type="text" id="cardNumber" name="cardNumber" placeholder="Card Number">
+                                <div class="date-code">
+                                    <input type="text" id="expirDate" name="expirDate" placeholder="MM/YY">
+                                    <input type="text" id="cvv" name="cvv" placeholder="CVV">
+                                </div>
+                                <input type="text" id="cardHolderName" name="cardHolderName" placeholder="Card Owner">
+                                <input type="text" id="billingAddress" name="billingAddress" placeholder="Billing Address">
+                                <input type="submit" value="Make Payment" id="submitBtn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-box">
+                    <div class="footer-img">
+                        <img src="./assets/home_forest_v03.svg" alt="">
+                    </div>
+                    <div class="social">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                    <div class="legal">
+                        <p class="iva">
+                            <a href="#">P.iva 34957100281</a>
+                        </p>
+                        <p class="cookies">
+                            <a href="#">Cookies/Privacy</a>
+                        </p>
+                    </div>
+                </div>
+                <p class="copy-p">Images from <a href="https://plnts.com">Plnts.com</a>, all rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- <script src="./js/header&hero.js"></script> -->
+        <script src="./js/menu.js"></script>
+        <script src="./js/dinamicsCart.js"></script>
+    </body>
+</html>

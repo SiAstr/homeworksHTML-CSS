@@ -1,0 +1,377 @@
+/* -------------------------------------------------------------------------- */
+/*                                   general                                  */
+/* -------------------------------------------------------------------------- */
+@font-face {
+    font-family: 'Klarissa Regular';
+    src: url("../assets/klarissa.regular.ttf") format('ttf');
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #242424;
+    font-family: "Quattrocento Sans", sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.bg-white {
+    background-color: #f8f8f8;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   header                                   */
+/* -------------------------------------------------------------------------- */
+
+#header {
+    width: 100%;
+    transition: 0.5s;
+    background-color: #578165;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    height: 10vh;
+    padding: 0.6rem 0;
+    transition: 1.5s;
+    transition: 0.6s;
+    position: relative;
+}
+
+.company-name {
+    font-size: 2rem;
+    display: none;
+    font-family: 'Klarissa Regular';
+    letter-spacing: -0.1rem;
+}
+
+.logo {
+    width: 3rem;
+    height: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.header-nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mobile-nav .main-nav a {
+    margin-left: 0.8rem;
+    text-align: center;
+    font-family: "Crimson Text", serif;
+}
+
+.mobile-nav .main-nav a:hover {
+    border-bottom: 1px solid #000;
+}
+
+.burger-icon i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cart-icon i {
+    font-size: 1.4rem;
+    color: #424242;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              side menu mobile                              */
+/* -------------------------------------------------------------------------- */
+
+.mobile-nav {
+    width: 60%;
+    height: 100vh;
+    background-color: #7b9464;
+    position: fixed;
+    top: 0;
+    right: -60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    transition: 0.6s ease-out;
+}
+
+.mobile-nav .main-nav {
+    list-style: none;
+    text-align: right;
+    font-size: 1.8rem;
+}
+
+.mobile-nav .main-nav li {
+    margin: 1.2rem 0;
+}
+
+.mobile-nav i {
+    position: absolute;
+    top: 4%;
+    right: 8%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  cart tag                                  */
+/* -------------------------------------------------------------------------- */
+
+#cartDesk {
+    position: relative;
+}
+
+.circle-tag {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #d08b61;
+    position: absolute;
+    top: -20%;
+    left: 75%;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    color: #f8f8f8;
+    font-size: 0.7rem;
+}
+
+.mobile-nav .circle-tag {
+    top: 5%;
+    left: 90%;
+}
+
+.active {
+    font-size: 1.3rem;
+    border-bottom: 1px solid #000;
+}
+
+.mobile-nav .active {
+    font-size: 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                desktop menu                                */
+/* -------------------------------------------------------------------------- */
+
+.desktop-nav {
+    display: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 placeholder                                */
+/* -------------------------------------------------------------------------- */
+
+main{
+    padding: 5vh 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top-logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-official{
+    max-width: 12rem;
+}
+
+.title-area{
+    text-align: center;
+    padding: 7vh 0;
+}
+
+.text-content h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-family: "Crimson Text", serif;
+}
+
+.text-content h3{
+    font-size: 2.3rem;
+    margin-bottom: 1.6rem;
+}
+
+.text-content h4{
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+    font-weight: 600;
+}
+
+.text-content p{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.company-logo{
+    width: 15rem;
+    margin: 2rem auto 4rem;
+}
+
+.tutors-area{
+    margin: 1rem auto 0;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items:start;
+}
+
+.body-area{
+    width: 90%;
+    margin: 0 auto 4rem;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.body-area h4{
+    text-align: center;
+    text-decoration: underline;
+    margin: 3rem 0;
+}
+
+.interline{
+    line-height: 1.15;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+/* -------------------------------------------------------------------------- */
+
+footer {
+    background-color: rgb(110, 146, 122);
+    padding: 1rem 0;
+    color: #3c3c3c;
+}
+
+.footer-box {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-img {
+    width: 20%;
+}
+
+.utils-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social i {
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: #1a1919;
+}
+
+.cookies {
+    margin-top: 0.3rem;
+}
+
+.copy-p {
+    text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                media query min 600px                              */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width:600px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .header-nav-icon {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .company-name {
+        display: block;
+    }
+
+    .logo {
+        opacity: 0;
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+
+    .desktop-nav .main-nav {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .desktop-nav .main-nav a {
+        color: #242424;
+        font-family: "Crimson Text", serif;
+        font-weight: 600;
+    }
+
+    .desktop-nav .main-nav a:hover {
+        border-bottom: 1px solid #000;
+    }
+
+    /* footer */
+
+    .footer-box {
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-img {
+        width: 8%;
+    }
+
+    .utils-link {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .social {
+        display: flex;
+        gap: 0.8rem;
+        font-size: 1.3rem;
+    }
+}
