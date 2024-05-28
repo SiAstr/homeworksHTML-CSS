@@ -3,7 +3,7 @@ let cartMobile = document.querySelector(".cart-nav-mobile");
 let logoDiv = document.querySelector(".logo")
 
 
-let plantArchive = "http://localhost:3000/plants";
+let plantArchive = "http://localhost:3000/objects";
 let forCart = [];
 
 

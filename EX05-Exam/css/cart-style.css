@@ -1,14 +1,10 @@
 /* -------------------------------------------------------------------------- */
 /*                                   general                                  */
 /* -------------------------------------------------------------------------- */
-@font-face {
-    font-family: 'Klarissa Regular';
-    src: url("../assets/klarissa.regular.ttf") format('ttf');
-}
 
 body {
     background-color: #f8f8f8;
-    color: #242424;
+    color: #131313;
     font-family: "Quattrocento Sans", sans-serif;
 }
 
@@ -31,6 +27,7 @@ a {
     background-color: #f8f8f8;
 }
 
+
 /* -------------------------------------------------------------------------- */
 /*                                   header                                   */
 /* -------------------------------------------------------------------------- */
@@ -39,7 +36,7 @@ a {
     width: 100%;
     height: 10vh;
     transition: 0.5s;
-    background-color: #578165;
+    background-color: #4c5a5f;
 }
 
 .header-box {
@@ -57,7 +54,7 @@ a {
 .company-name {
     font-size: 2rem;
     display: none;
-    font-family: 'Klarissa Regular';
+    font-family: 'Anton';
     letter-spacing: -0.1rem;
 }
 
@@ -77,7 +74,7 @@ a {
 .mobile-nav .main-nav a {
     margin-left: 0.8rem;
     text-align: center;
-    font-family: "Crimson Text", serif;
+    font-family: "Roboto Serif", serif;
 }
 
 .mobile-nav .main-nav a:hover {
@@ -91,7 +88,7 @@ a {
 
 .cart-icon i {
     font-size: 1.4rem;
-    color: #424242;
+    color: #1a1919;
     cursor: pointer;
     margin-bottom: 0.8rem;
 }
@@ -103,7 +100,7 @@ a {
 .mobile-nav {
     width: 60%;
     height: 100vh;
-    background-color: #7b9464;
+    background-color: #818899;
     position: fixed;
     top: 0;
     right: -60%;
@@ -154,10 +151,10 @@ a {
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
-    background-color: #d08b61;
+    background-color: #e2c958;
     position: absolute;
-    top: -20%;
-    left: 75%;
+    top: -16%;
+    left: 83%;
     opacity: 0.8;
     display: flex;
     justify-content: center;
@@ -169,7 +166,7 @@ a {
 
 .mobile-nav .circle-tag {
     top: 5%;
-    left: 90%;
+    left: 95%;
 }
 
 .active {
@@ -200,7 +197,7 @@ a {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    font-family: "Crimson Text", serif;
+    font-family: "Roboto Serif", serif;
     margin-bottom: 0.6rem;
 }
 
@@ -267,7 +264,7 @@ a {
 
 .trash-bin i {
     font-size: 1rem;
-    background-color: #D8966C;
+    background-color: #7a73b8;
     color: #f8f8f8;
     padding: 0.3rem 0.4rem;
     border-radius: 15%;
@@ -275,11 +272,11 @@ a {
 }
 
 .trash-bin i:hover {
-    background-color: #d39f7f;
+    background-color: #9b92e7;
 }
 
 .trash-bin i:active {
-    background-color: #b68668;
+    background-color: #6a64a1;
 }
 
 .spacer {
@@ -310,7 +307,7 @@ a {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    font-family: "Crimson Text", serif;
+    font-family: "Roboto Serif", serif;
     margin-bottom: 0.7rem;
 }
 
@@ -318,7 +315,7 @@ a {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
-    font-family: "Crimson Text", serif;
+    font-family: "Roboto Serif", serif;
     margin-bottom: 0.6rem;
     display: flex;
     justify-content: space-around;
@@ -326,7 +323,7 @@ a {
 
 .number-tag {
     padding: 0 0.6rem;
-    background-color: #6fa581;
+    background-color: #89b4c5;
     color: #f8f8f8;
     border-radius: 20%;
 }
@@ -355,7 +352,7 @@ input {
 }
 
 input:focus {
-    border-color: #75ac87;
+    border-color: #89b4c5;
     outline: none;
 }
 
@@ -377,26 +374,26 @@ input:focus {
 #submitBtn {
     width: 80%;
     margin-top: 0.6rem;
-    background-color: #659675;
+    background-color: #89b4c5;
     color: #fff;
     cursor: pointer;
 }
 
 #submitBtn:hover {
-    background-color: #6fa581;
+    background-color: #94b9c7;
 }
 
 #submitBtn:active {
-    background-color: #578165;
+    background-color: #668692;
 }
 /* -------------------------------------------------------------------------- */
 /*                                   footer                                   */
 /* -------------------------------------------------------------------------- */
 
 footer {
-    background-color: rgb(110, 146, 122);
+    background-color: #4c5a5f;
     padding: 1rem 0;
-    color: #3c3c3c;
+    color: #272727;
 }
 
 .footer-box {
@@ -418,12 +415,18 @@ footer {
     justify-content: space-evenly;
 }
 
+.social {
+    display: flex;
+    gap: 0.8rem;
+    font-size: 1.3rem;
+}
+
 .social i {
     cursor: pointer;
 }
 
 .social i:hover {
-    color: #1a1919;
+    color: #cccccc;
 }
 
 .cookies {
@@ -470,8 +473,8 @@ footer {
     }
 
     .desktop-nav .main-nav a {
-        color: #242424;
-        font-family: "Crimson Text", serif;
+        color: #141414;
+        font-family: "Roboto Serif", serif;
         font-weight: 600;
     }
 

@@ -1,0 +1,53 @@
+{
+  "objects": [
+    {
+      "nome": "Beetlejuice",
+      "family": "Monstera ",
+      "img": "./assets/products-photo/beetlejuice.jpg",
+      "prezzo": "5",
+      "id": "1",
+      "amountPurchased": "0"
+    },
+    {
+      "nome": "Priscilla",
+      "family": "Alocasia",
+      "img": "./assets/products-photo/priscilla.jpg",
+      "prezzo": "5",
+      "id": "2",
+      "amountPurchased": "0"
+    },
+    {
+      "nome": "Guida galattica per Autostoppisti",
+      "family": "Alocasia",
+      "img": "./assets/products-photo/guidagal.jpg",
+      "prezzo": "5",
+      "id": "3",
+      "amountPurchased": "0"
+    },
+    {
+      "nome": "The Rocky Horror Picture Show",
+      "family": "Philodendron ",
+      "img": "./assets/products-photo/rocky.jpg",
+      "prezzo": "5",
+      "id": "4",
+      "amountPurchased": "0"
+    },
+    {
+      "nome": "Tremors",
+      "family": "Anthurium ",
+      "img": "./assets/products-photo/tremors.jpg",
+      "prezzo": "5",
+      "id": "5",
+      "amountPurchased": "0"
+    },
+    {
+      "nome": "Jaws",
+      "family": "Philodendron ",
+      "img": "./assets/products-photo/jaws.jpg",
+      "prezzo": "5",
+      "id": "6",
+      "amountPurchased": "0"
+    }
+  ],
+  "purchases": []
+}

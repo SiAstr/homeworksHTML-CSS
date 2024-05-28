@@ -6,7 +6,7 @@ let totPrice = document.querySelector(".total-price")
 let numberTag = document.querySelector(".number-tag")
 let submitBtn = document.querySelector("#submitBtn")
 
-let plantArchive = "http://localhost:3000/plants";
+let plantArchive = "http://localhost:3000/objects";
 let forCart = [];
 let finalCart = []
 
