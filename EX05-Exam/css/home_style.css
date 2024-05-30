@@ -252,6 +252,13 @@ a {
     margin-top: 3rem;
 }
 
+.past-title{
+    text-align: center;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
 .img-slider,
 .info-text {
     width: 90%;
@@ -259,12 +266,13 @@ a {
 
 .slider-piece {
     transition: 0.5s;
+    max-height: 32rem;
 }
 
 .info-title {
     font-size: 1.8rem;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-family: "Roboto Serif", serif;
 }
 
@@ -283,9 +291,10 @@ a {
 
 .gallery-title {
     text-align: center;
-    font-family: "Roboto Serif", serif;
+    font-family: "Anton", serif;
     font-size: 2.4rem;
     margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 
 .product-gallery {
@@ -294,9 +303,16 @@ a {
 
 .product-card {
     margin: 0 auto 2rem;
-    padding: 8%;
+    padding: 6%;
     border: 1px solid #7272721c;
     border-radius: 2rem;
+}
+
+.sala-title{
+    text-align: center;
+    margin: 0 0 1rem;
+    font-size: 1.8rem;
+    font-family: "Anton";
 }
 
 .product-card-inner {
@@ -360,7 +376,7 @@ a {
 
 
 .add {
-    background-color: #89b4c5;
+    background-color: #77a9bc;
 }
 
 .add:hover {
@@ -583,6 +599,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
+        padding: 0 10rem;
     }
 
     .products-gallery {
@@ -590,12 +607,13 @@ footer {
     }
 
     .product-card {
-        width: calc((33.3333% - 1rem) + (1rem / 3));
+        width: calc((50% - 1rem) + (1rem / 3));
         margin: 0;
-        padding: 2%;
+        padding: 4%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-color: #efecec;
     }
 
     /* main cta button  */

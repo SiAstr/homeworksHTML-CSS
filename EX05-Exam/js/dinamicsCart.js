@@ -166,8 +166,8 @@ function alertEmptyCart(){
 
     alertDiv.setAttribute("class", "alert-empty")
     alertLink.setAttribute("href", "./index.html")
-    alertMessage.textContent = "You Cart is Empty, please return to the "
-    alertLink.textContent = "Main Page!"
+    alertMessage.textContent = "Il tuo carrello è vuoto, per favore torna alla "
+    alertLink.textContent = "Home Page!"
     alertLink.style.borderBottom ="2px solid #00000096"
 
     alertLinkSpan.appendChild(alertLink)

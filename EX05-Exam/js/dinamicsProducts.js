@@ -8,8 +8,9 @@ let cartMainBtn = document.querySelector(".button-to-cart");
 
 
 let productArchive = "http://localhost:3000/objects";
+let oldProductArchive = "http://localhost:3000/old";
 let productImgs = [];
-let interval = 1400;
+let interval = 1800;
 let forCart = [];
 
 sliderPiece.setAttribute("src", "./assets/products-photo/priscilla.jpg");
@@ -20,6 +21,19 @@ window.addEventListener('DOMContentLoaded', function(){
     }
 })
 
+fetch(oldProductArchive)
+    .then(data => {
+        return data.json();
+    })
+    .then(response => {
+        response.forEach(oldProduct => {
+            productImgs.push(oldProduct.img)
+        });
+        setInterval(randomizeSliderproducts, interval);
+    })
+    .finally(function(){
+        cartNumberTag()
+    })
 
 fetch(productArchive)
     .then(data => {
@@ -27,10 +41,8 @@ fetch(productArchive)
     })
     .then(response => {
         response.forEach(product => {
-            productImgs.push(product.img);
             createproductCard(product);
         });
-        setInterval(randomizeSliderproducts, interval);
     })
     .finally(function(){
         cartNumberTag()
@@ -53,6 +65,7 @@ fetch(productArchive)
     }
 
 function createproductCard(product){
+    let productCardContainer = document.createElement("div");
     let productCard = document.createElement("div");
     let productCardInner = document.createElement("div");
     let productImgBox = document.createElement("div");
@@ -60,13 +73,15 @@ function createproductCard(product){
     let productTexBox = document.createElement("div");
     let textBox = document.createElement("div");
     let productName = document.createElement("h5");
-    let productFamily = document.createElement("p");
+    let productAuthor = document.createElement("p");
     let productPrice = document.createElement("p");
     let productAmount = document.createElement("span");
     let productButtonDiv = document.createElement("div");
     let productButtonCta = document.createElement("div");
+    let salaTitle = document.createElement("h3")
 
-    productCard.setAttribute("class", "product-card")
+    productCardContainer.setAttribute("class", "product-card")
+    salaTitle.setAttribute("class", "sala-title")
     productCardInner.setAttribute("class", "product-card-inner")
     productImgBox.setAttribute("class", "product-img-box")
     productImg.setAttribute("class", "product-img")
@@ -74,7 +89,7 @@ function createproductCard(product){
     productTexBox.setAttribute("class", "product-text-box")
     textBox.setAttribute("class", "text-box")
     productName.setAttribute("class", "p-name")
-    productFamily.setAttribute("class", "p-family")
+    productAuthor.setAttribute("class", "p-Author")
     productPrice.setAttribute("class", "p-price")
     productAmount.setAttribute("class", "p-amount")
     productButtonDiv.setAttribute("class", "p-button-div")
@@ -82,10 +97,11 @@ function createproductCard(product){
 
     
     productName.textContent = product.nome;
-    productFamily.textContent = product.family;
+    productAuthor.textContent = product.autore;
     productPrice.textContent = "Prezzo: €";
     productAmount.textContent = product.prezzo;
     productButtonCta.textContent = "Aggiungi al carrello";
+    salaTitle.textContent = "Sala " + product.id
 
     for(let i = 0; i < forCart.length; i++){
         if(product.id == forCart[i]){
@@ -122,7 +138,7 @@ function createproductCard(product){
     productTexBox.appendChild(productPrice)
     
     textBox.appendChild(productName)
-    textBox.appendChild(productFamily)
+    textBox.appendChild(productAuthor)
     
     productPrice.appendChild(productAmount)
 
@@ -131,7 +147,10 @@ function createproductCard(product){
     productCard.appendChild(productCardInner)
     productCard.appendChild(productButtonDiv)
 
-    productsGallery.appendChild(productCard)
+    productCardContainer.appendChild(salaTitle)
+    productCardContainer.appendChild(productCard)
+
+    productsGallery.appendChild(productCardContainer)
 }
 
 function cartNumberTag(){

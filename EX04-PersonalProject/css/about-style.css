@@ -201,7 +201,7 @@ main{
 
 .title-area{
     text-align: center;
-    padding: 7vh 0;
+    padding: 7vh 0 0;
 }
 
 .text-content h2{
@@ -252,7 +252,7 @@ main{
 .body-area h4{
     text-align: center;
     text-decoration: underline;
-    margin: 3rem 0;
+    margin: 0 0 3rem;
 }
 
 .interline{
